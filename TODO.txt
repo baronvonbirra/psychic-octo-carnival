@@ -1,4 +1,4 @@
-# GET actor using API
+# GET actor using API / replace current IMDb with TMDb
 # GET random actor1
 # GET random actor2
 # Input for movie1
