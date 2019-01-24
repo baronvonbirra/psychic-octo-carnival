@@ -1,0 +1,14 @@
+# GET actor using API
+# GET random actor1
+# GET random actor2
+# Input for movie1
+# GET movie1
+# Win: Check actor1 and actor2 against movie1
+# GET actor1 image
+# GET actor2 image
+# GET movie1 image
+# UI improvements 
+# Input for actor3
+# GET actor3
+# Able to repeat steps 4-5 & 11-12
+# UI improvements
