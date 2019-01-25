@@ -12,3 +12,8 @@
 # GET actor3
 # Able to repeat steps 4-5 & 11-12
 # UI improvements
+# Restart button
+# Start button
+# Instructions section
+# Hint button
+# UI improvements
