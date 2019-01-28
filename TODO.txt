@@ -17,3 +17,5 @@
 # Instructions section
 # Hint button
 # UI improvements
+# Easy Mode
+# Personalized Mode
