@@ -39,13 +39,6 @@ function getActorURL() {
   return url;
 };
 
-function getActorTwoName() {
-  number = generateRandomNumber();
-  url = generateActorURL(number);
-
-  return url;
-};
-
 function generateRandomNumber() {
   var number = Math.random() * (9999);
   number = Math.round(number);
@@ -69,11 +62,21 @@ function printActorTwoName() {
 }
 
 function printActorOneImage() {
-  img = "<img src='" + getImageOne + "'>";
-  document.getElementById("actorOneImage").innerHTML = img;
+  if (getImageOne == 'https://image.tmdb.org/t/p/w200null') {
+    img = './images/EjayQ10E.jpg'
+  } else {
+    img = getImageOne;
+  }
+  imgSrc = "<img src='" + img + "'>";
+  document.getElementById("actorOneImage").innerHTML = imgSrc;
 }
 
 function printActorTwoImage() {
-  img = "<img src='" + getImageTwo + "'>";
-  document.getElementById("actorTwoImage").innerHTML = img;
+  if (getImageTwo == 'https://image.tmdb.org/t/p/w200null') {
+    img = './images/EjayQ10E.jpg'
+  } else {
+    img = getImageTwo;
+  }
+  imgSrc = "<img src='" + img + "'>";
+  document.getElementById("actorTwoImage").innerHTML = imgSrc;
 }
