@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
 body{
-    text-align: center;
-    background-color: black;
-    color: grey;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-    min-height: 55vh;
-    padding-top: 45vh;
-  }
+  text-align: center;
+  background-color: black;
+  color: grey;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+}
+
+#movieOneContainer {
+  display: none;
+}

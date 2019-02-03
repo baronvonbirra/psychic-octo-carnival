@@ -1,5 +1,6 @@
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
@@ -8,16 +9,33 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="actorOneContent">
-            <p id="actorOneName"></p>
-            <div id="actorOneImage"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="actorOneContent">
+                <p id="actorOneName">
+                <p id="actorOneImage">
+            </div>
+            <div class="col" id="actorOneContent">
+                <p id="actorTwoName">
+                <p id="actorTwoImage">
+            </div>
+        </div>    
+    </div>
+    <form class="movieOneForm">
+        <div class="movieOne">
+            <input autofocus type="text" class="form-control form-control-sm" id="movieOneInput" placeholder="Enter movie" required>
         </div>
-        <div class="actorOneContent">
-            <p id="actorTwoName"></p>
-            <p id="actorTwoImage"></p>
-        </div>
+    </form>
+    <div class="container-fluid" id="movieOneContainer">
+        <div class="row">
+            <div class="col" id="actorOneContent">
+                <p>Hello world!</p>
+                <p id="movieOneName">
+                <p id="movieOneImage">
+            </div>
+        </div>            
     </div>
 </body>
 
 <script src="./js/getActor.js"></script>
+<script src="./js/getMovie.js"></script>

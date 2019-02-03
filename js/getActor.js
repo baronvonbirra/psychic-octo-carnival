@@ -5,7 +5,7 @@ var getActorOneCall = {
   "method": "GET",
   "headers": {},
   "data": "{}"
-  };
+};
 
 var getActorOneName = $.ajax(getActorOneCall).done(function (response) {
   getNameOne = response.name;
@@ -21,41 +21,41 @@ var getActorTwoCall = {
   "method": "GET",
   "headers": {},
   "data": "{}"
-  };  
+};
 
 var getActorTwoName = $.ajax(getActorTwoCall).done(function (response) {
   getNameTwo = response.name;
   getImageTwo = imageURL + response.profile_path;
   printActorTwoName();
   printActorTwoImage();
-});  
+});
 
 var imageURL = 'https://image.tmdb.org/t/p/w200';
 
 function getActorURL() {
   number = generateRandomNumber();
-  url = generateURL(number);
+  url = generateActorURL(number);
 
   return url;
 };
 
 function getActorTwoName() {
   number = generateRandomNumber();
-  url = generateURL(number);
+  url = generateActorURL(number);
 
   return url;
 };
 
 function generateRandomNumber() {
-  var number =  Math.random() * (9999);
+  var number = Math.random() * (9999);
   number = Math.round(number);
   number = number.toString();
-    
+
   return number;
 }
 
-function generateURL(number) {
-  var url = "https://api.themoviedb.org/3/person/"+number+"?language=en-US&api_key=44f63178760c028c7269aab4ef019b6f";
+function generateActorURL(number) {
+  var url = "https://api.themoviedb.org/3/person/" + number + "?language=en-US&api_key=44f63178760c028c7269aab4ef019b6f";
 
   return url;
 }
@@ -69,11 +69,11 @@ function printActorTwoName() {
 }
 
 function printActorOneImage() {
-  img = "<img src='"+getImageOne+"'>";
+  img = "<img src='" + getImageOne + "'>";
   document.getElementById("actorOneImage").innerHTML = img;
 }
 
 function printActorTwoImage() {
-  img = "<img src='"+getImageTwo+"'>";
+  img = "<img src='" + getImageTwo + "'>";
   document.getElementById("actorTwoImage").innerHTML = img;
 }
