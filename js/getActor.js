@@ -10,6 +10,7 @@ var getActorOneCall = {
 var getActorOneName = $.ajax(getActorOneCall).done(function (response) {
   getNameOne = response.name;
   getImageOne = imageURL + response.profile_path;
+  getActorIDOne = response.id;
   printActorOneName();
   printActorOneImage();
 });
@@ -26,6 +27,7 @@ var getActorTwoCall = {
 var getActorTwoName = $.ajax(getActorTwoCall).done(function (response) {
   getNameTwo = response.name;
   getImageTwo = imageURL + response.profile_path;
+  getActorIDTwo = response.id;
   printActorTwoName();
   printActorTwoImage();
 });

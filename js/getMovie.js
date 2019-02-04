@@ -1,6 +1,7 @@
 $('.movieOneForm').on('submit', function () {
     $("#movieOneContainer").show();
     window.name = setMovieOneURL();
+    triggerMovieOneCheck();
     triggerMovieOne();
     $('#movieOneInput').prop('disabled', true);
    
